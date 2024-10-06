@@ -1,0 +1,109 @@
+/* Basic reset for margins and padding */
+body, h2, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+/* Container for the found item form */
+.found-container {
+    max-width: 500px; /* Set a maximum width for the form */
+    margin: 50px auto; /* Center the form */
+    padding: 20px; /* Add some padding */
+    border: 1px solid #e0e0e0; /* Light border for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #ffffff; /* White background */
+    color: #333; /* Darker text color for better readability */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Container hover effect */
+.found-container:hover {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Title styling */
+.found-container h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+    font-family: 'Arial', sans-serif; /* Font style */
+    font-size: 24px; /* Larger font size for the title */
+    color: #ff8afb; /* Green color for the title */
+}
+
+/* Form styling */
+.found-container form {
+    display: flex; /* Flexbox for easy alignment */
+    flex-direction: column; /* Stack the elements */
+}
+
+/* Input styling */
+.found-container input, 
+.found-container textarea {
+    padding: 12px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for inputs */
+    transition: border 0.3s ease; /* Smooth border transition */
+}
+
+/* Input focus effect */
+.found-container input:focus, 
+.found-container textarea:focus {
+    border-color: #9e4caf; /* Green border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+.found-container button {
+    padding: 12px; /* Padding inside the button */
+    background-color: #fe95fe; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Button hover effect */
+.found-container button:hover {
+    background-color: #9845a0; /* Darker green on hover */
+}
+
+/* Success and error message styling */
+.success-message, .error-message {
+    text-align: center; /* Center the messages */
+    margin-top: 15px; /* Space above messages */
+    font-size: 16px; /* Font size for messages */
+}
+
+.success-message {
+    color: #594caf; /* Green color for success */
+}
+
+.error-message {
+    color: #f44336; /* Red color for errors */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .found-container {
+        margin: 20px; /* Reduce margin on smaller screens */
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .found-container h2 {
+        font-size: 20px; /* Smaller title size on mobile */
+    }
+    
+    .found-container input, 
+    .found-container textarea,
+    .found-container button {
+        font-size: 14px; /* Smaller font size on mobile */
+    }
+}

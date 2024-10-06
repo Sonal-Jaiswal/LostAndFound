@@ -1,0 +1,91 @@
+/* Base styling for the FoundItems component */
+.found-items-container {
+    max-width: 800px; /* Set a max width for the container */
+    margin: 40px auto; /* Center the container */
+    padding: 20px; /* Add padding around the container */
+    background-color: #ffffff; /* White background for the main content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Title styling */
+.found-items-container h2 {
+    text-align: center; /* Center the title */
+    font-size: 28px; /* Larger font size for the title */
+    color: #333; /* Dark gray color for the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* List styling */
+.found-items-list {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove padding from the list */
+}
+
+/* Individual item styling */
+.found-items-list li {
+    padding: 15px; /* Padding for each item */
+    margin: 15px 0; /* Margin between items */
+    background-color: #ffc7f784; /* Light gray background for items */
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition */
+}
+
+/* Hover effect for items */
+.found-items-list li:hover {
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    background-color: #c392ff52;
+    transition: 0.3s;
+}
+
+/* Item name styling */
+.found-items-list li h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 22px; /* Slightly larger font for item names */
+    color: #db3bff; /* Bootstrap primary color for item names */
+    font-weight: 600; /* Semi-bold */
+}
+
+/* Description and details styling */
+.found-items-list li p {
+    margin: 5px 0; /* Space between paragraphs */
+    color: #555; /* Medium gray for text */
+    line-height: 1.5; /* Increased line height for readability */
+}
+
+/* Loading and error message styling */
+.loading,
+.error {
+    text-align: center; /* Center the loading/error messages */
+    font-size: 18px; /* Font size for messages */
+    margin-top: 20px; /* Space above messages */
+}
+
+.error {
+    color: #e74c3c; /* Red color for error messages */
+}
+
+.loading {
+    color: #3498db; /* Blue color for loading messages */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .found-items-container {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .found-items-container h2 {
+        font-size: 24px; /* Adjust title size */
+    }
+
+    .found-items-list li {
+        padding: 10px; /* Reduce padding for items */
+    }
+
+    .found-items-list li h3 {
+        font-size: 20px; /* Adjust font size for item names */
+    }
+}

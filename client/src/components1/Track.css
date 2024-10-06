@@ -1,0 +1,67 @@
+.track-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adjusted shadow for better contrast */
+}
+
+.track-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #f36aff;
+  margin-bottom: 20px;
+}
+
+.track-list {
+  list-style: none;
+  padding: 0;
+}
+.track-item a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.track-item a:hover {
+  text-decoration: underline;
+}
+
+.track-item {
+  background-color: #f9f9f9; /* Slightly lighter for better readability */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  transition: background-color 0.2s;
+  color: #333; /* Darker text for better contrast */
+}
+
+.track-item:hover {
+  background-color: #f4e9fb; /* Light purple background on hover */
+}
+
+.track-item strong {
+  color: #f36aff; /* Consistent with the title color */
+}
+
+.loading-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #2980b9; /* Loading message in blue */
+}
+
+.error-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #e74c3c; /* Error message in red */
+}
+
+/* Additional CSS for the location list */
+.locationnn {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}

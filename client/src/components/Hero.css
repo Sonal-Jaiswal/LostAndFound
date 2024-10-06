@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(165deg, #ddc7f8,#3b2557 , #1f0550); /* Purple gradient */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #10061c;
+    color: #ffffff; /* Floral White text */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 58px; /* Title size */
+    margin-bottom: 10px; /* Space below title */
+    color: #9ea2ff
+}
+
+.hero-intro {
+    font-size: 30px; /* Intro text size */
+    margin-bottom: 40px; /* Space below intro */
+    color: #cb8fff
+    
+}
+
+.hero-intro1 {
+    font-size: 20px; /* Intro text size */
+    margin-top: 10px; /* Space below intro */
+    color: #ffffff;
+}
+
+.button-container {
+    display: flex;
+    gap: 140px; /* Space between button wrappers */
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center images and buttons */
+}
+
+.hero-image {
+    width: 80px; /* Image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 30px; /* Space below image */
+    transition: 0.3s;
+}
+
+.hero-image:hover {
+    width: 80px; /* Image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below image */
+    transition: 0.3s;
+}
+
+.hero-button {
+    padding: 5px 30px; /* Button padding */
+    font-size: 28px; /* Button text size */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth background, transform, and box-shadow change */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #D2FF72; /* New color for buttons */
+    color: #211D21; /* Raisin Black text */
+    box-shadow: 0 4px 8px rgb(0, 0, 0); /* Box shadow */
+}
+
+.hero-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.lost {
+    background-color: #a54aff; /* New color for Lost button */
+    color: #000000; /* Raisin Black text for Lost button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
+    border: 1px solid #ffffff;
+}
+
+.lost:hover {
+    background-color: #7503ff97; /* New hover color for Lost button */
+    color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    border: 1px solid #7167ff;
+}
+
+.found {
+    background-color: #c2ffce00; /* New color for Found button */
+    color: #ffffff; /* Raisin Black text for Found button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
+    border-radius: 10px;
+    border: 1px solid #8b40ad; /* Correct border color */
+}
+
+
+.found:hover {
+    background-color: #9705ff5d; /* New hover color for Found button */
+    color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+.hero-container {
+    opacity: 0; /* Start with hidden */
+    transform: translateY(20px); /* Slide from below */
+    animation: fadeInUp 2s forwards; /* Animation duration set to 2 seconds */
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+.hero-title,
+.hero-intro,
+.hero-intro1,
+.button-container {
+    opacity: 0; /* Start with hidden */
+    transform: translateY(20px); /* Slide from below */
+    animation: fadeInUp 2s forwards; /* Animation duration set to 2 seconds */
+    animation-delay: 0.2s; /* Delay for intro text */
+}
+
+.button-container {
+    animation-delay: 0.4s; /* Delay for button container */
+}

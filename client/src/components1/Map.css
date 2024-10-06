@@ -1,0 +1,95 @@
+/* Overall page layout and styling */
+.map-page {
+    display: flex;                      /* Flexbox layout */
+    flex-direction: column;             /* Stack elements vertically */
+    align-items: center;                /* Center align items */
+    padding: 30px 20px;                 /* Padding with larger space */
+    background-color: #ffffff;          /* Clean white background */
+    border-radius: 12px;                /* Smooth rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Elevated shadow */
+    max-width: 1200px;                  /* Limit the maximum width */
+    margin: 40px auto;                  /* Center on the page */
+    font-family: 'Arial', sans-serif;   /* Professional sans-serif font */
+}
+
+/* Heading styles */
+h2 {
+    font-size: 24px;                    /* Slightly larger heading */
+    margin-bottom: 25px;                /* Space below heading */
+    color: #333333;                     /* Dark gray for modern look */
+    text-align: center;                 /* Center-align heading */
+    font-weight: 600;                   /* Bolder font */
+    letter-spacing: 0.5px;              /* Slight letter spacing for clarity */
+}
+
+/* Map container styling */
+.map-container {
+    width: 100%;                        /* Full width for the map */
+    height: 70vh;                       /* Defined height for the map */
+    border-radius: 12px;                /* Smooth rounded corners for the map */
+    overflow: hidden;                   /* Hide overflow */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Refined shadow for depth */
+    margin-bottom: 25px;                /* Space below the map */
+}
+
+/* Custom marker icon styles */
+.marker-icon {
+    width: 35px;                        /* Slightly larger width */
+    height: 45px;                       /* Adjusted height for balance */
+}
+
+/* Button styling */
+.submit-button {
+    background-color: #007BFF;          /* Primary blue color */
+    color: #ffffff;                     /* White text */
+    border: none;                       /* Remove default border */
+    padding: 12px 18px;                 /* More padding for a premium feel */
+    border-radius: 6px;                 /* Rounded corners for a modern look */
+    cursor: pointer;                    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+    font-size: 16px;                    /* Larger button text */
+    font-weight: 500;                   /* Medium font weight */
+    margin-top: 15px;                   /* Space above the button */
+    text-align: center;                 /* Center-align button text */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Button shadow for depth */
+}
+
+.submit-button:hover {
+    background-color: #0056b3;          /* Darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Alert message styling */
+.alert {
+    margin-top: 25px;                   /* More space above alert */
+    color: #28a745;                     /* Bootstrap success green */
+    font-weight: bold;                  /* Bold text for importance */
+    font-size: 16px;                    /* Clear, readable font size */
+    text-align: center;                 /* Center-align message */
+    letter-spacing: 0.5px;              /* Slight letter spacing */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .map-page {
+        padding: 20px;                  /* Reduce padding on smaller screens */
+    }
+
+    h2 {
+        font-size: 20px;                /* Slightly smaller heading */
+    }
+
+    .submit-button {
+        font-size: 14px;                /* Reduce button text size */
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container {
+        height: 50vh;                   /* Reduce map height on small devices */
+    }
+
+    .submit-button {
+        width: 100%;                    /* Full-width button on small devices */
+    }
+}

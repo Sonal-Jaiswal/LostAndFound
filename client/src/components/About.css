@@ -1,0 +1,91 @@
+.about-container {
+    padding: 30px;
+    text-align: left;
+    background-color: #06060690; /* Matching background */
+    color: #ffffff; /* White text */
+    border-radius: 20px; /* Rounded corners for the container */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+}
+
+h2 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+    color: #9EA2FF; /* Gold color for the heading */
+}
+
+h3 {
+    font-size: 28px;
+    margin: 20px 0;
+    text-align: center; /* Center the subheading */
+    color: #9EA2FF; /* Orange color for the subheading */
+}
+
+.slider {
+    display: flex;
+    overflow: hidden; /* Hide overflow for slides */
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 10px;
+    background-color: rgba(28, 37, 60, 0.8); /* Slightly dark background for the slider */
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for the slider */
+    border: 1px solid rgb(185, 9, 255);
+}
+
+.slide {
+    display: flex; /* Keep slide items in a row */
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.feature-slide {
+    min-width: 100%; /* Each slide takes full width */
+    display: flex; /* Center text within slide */
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Padding for better spacing */
+    opacity: 0; /* Start with hidden opacity */
+    animation: fadeIn 0.5s forwards; /* Animation for fading in */
+}
+
+.slide-description {
+    font-size: 18px;
+    margin: 20px 0; /* Add some margin for spacing */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Slight upward movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Final position */
+    }
+}
+
+/* Slider Controls */
+.slider-controls {
+    margin-top: 20px;
+    display: flex; /* Align controls in a row */
+    justify-content: center; /* Center the controls */
+}
+
+.control {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Padding for better button size */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded button corners */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+    margin: 0 10px; /* Space between buttons */
+}
+
+.control:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker on hover */
+}

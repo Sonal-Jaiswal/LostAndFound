@@ -1,0 +1,51 @@
+.footer-container {
+    background-color: #0a041f; /* Matching background color */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    text-align: center; /* Center text */
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border at the top */
+}
+
+.footer-content {
+    max-width: 800px; /* Limit content width */
+    margin: 0 auto; /* Center the content */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.footer-links {
+    display: flex; /* Use flexbox for footer links */
+    justify-content: space-between; /* Space out links evenly */
+    width: 100%; /* Full width for links */
+    margin-bottom: 10px; /* Space below links */
+}
+
+.footer-links a {
+    color: #9EA2FF; /* Gold color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer-links a:hover {
+    color: #9EA2FF; /* Change to orange on hover */
+}
+
+/* Social media links */
+.social-media {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 10px 0; /* Add some margin above and below the list */
+    display: flex; /* Display items in a row */
+    justify-content: center; /* Center social media links */
+}
+
+.social-media li {
+    margin: 0 10px; /* Space between social media links */
+    color: #9EA2FF; /* Gold color for social media links */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.social-media li:hover {
+    color: #9EA2FF; /* Change to orange on hover */
+}
